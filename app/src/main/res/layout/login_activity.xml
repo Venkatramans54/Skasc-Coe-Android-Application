@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include
+        layout="@layout/app_bar"
+         />
+
+    <EditText
+        android:id="@+id/usernamelogintxt"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="154dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:hint="USERNAME"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/passwordlogintxt"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/usernamelogintxt"
+        android:layout_below="@+id/usernamelogintxt"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordlogintxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button"
+        android:text="LOGIN"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_marginTop="26dp"
+        android:text="SIGN UP"
+        android:textSize="18dp"
+        android:layout_below="@+id/btnlogin"
+        android:layout_alignStart="@+id/btnlogin" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:layout_marginStart="19dp"
+        android:text="LOGIN"
+        android:layout_alignBottom="@+id/btnsignup"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="32dp" />
+
+</RelativeLayout>
+    </ScrollView>

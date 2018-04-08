@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/academic"
+
+            android:title="ACADEMIC_CALENDAR"
+            android:icon="@drawable/list"/>
+        <item
+            android:id="@+id/circular"
+
+            android:title="CIRCULAR"
+            android:icon="@drawable/list"/>
+
+        <item
+            android:id="@+id/odd"
+
+            android:title="ODD_SEM_PLAN"
+            android:icon="@drawable/list"/>
+        <item
+            android:id="@+id/even"
+
+            android:title="EVEN_SEM_PLAN"
+            android:icon="@drawable/list"/>
+        <item
+            android:id="@+id/notifications"
+
+            android:title="NOTIFICATIONS"
+            android:icon="@drawable/notif"/>
+
+    </group>
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/logout"
+
+            android:title="LOGOUT"
+            android:icon="@drawable/logout"/>
+        <item
+            android:id="@+id/exit"
+
+            android:title="EXIT"
+            android:icon="@drawable/exit1"/>
+
+
+    </group>
+
+
+</menu>

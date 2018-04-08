@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+   >
+    <include
+        layout="@layout/app_bar"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_below="@+id/datetxtOdd"
+        android:background="@drawable/edittext2"
+        android:gravity="top|left"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp"
+        android:id="@+id/scheduletxtOdd"
+        android:layout_alignParentEnd="true"
+        android:hint="SCHEDULE DESCRIPTION" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_marginTop="134dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/datetxtOdd"
+        android:hint="DATE  (DD/MM/YYYY)"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="UPDATE"
+        android:layout_width="wrap_content"
+        android:background="@drawable/button"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnoddsave"
+        android:layout_marginTop="39dp"
+        android:layout_marginStart="78dp"
+        android:layout_below="@+id/scheduletxtOdd"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btndeleteodd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:layout_marginStart="57dp"
+        android:background="@drawable/button"
+        android:layout_alignBaseline="@+id/btnoddsave"
+        android:layout_alignBottom="@+id/btnoddsave"
+        android:layout_toEndOf="@+id/btnoddsave" />
+</RelativeLayout>
+    </ScrollView>
